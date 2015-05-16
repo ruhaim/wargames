@@ -40,5 +40,40 @@ bandit0@melinda:~$ ls
 
 http://overthewire.org/wargames/bandit/bandit0.html
 
+### bandit0@melinda:~$ ls
+readme
+
+### bandit0@melinda:~$ cat readme
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+# 
+
 
 # level1
+### ssh bandit1@bandit.labs.overthewire.org
+
+### bandit1@bandit.labs.overthewire.org's password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+### bandit1@melinda:~$ cat < -
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+
+# level2
+
+### ssh bandit2@bandit.labs.overthewire.org
+
+### bandit2@bandit.labs.overthewire.org's password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+### bandit2@melinda:~$ ls
+spaces in this filename
+
+### 
+
+
+
+
+
+
+
+
+
