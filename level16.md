@@ -1,122 +1,113 @@
-# wargames
-
-# level0
-### ssh bandit0@bandit.labs.overthewire.org
-
-This is the OverTheWire game server. More information on http://www.overthewire.org/wargames
-
-Please note that wargame usernames are no longer level<X>, but wargamename<X>
-e.g. vortex4, semtex2, ...
-
-Note: at this moment, blacksun is not available.
-
-### bandit0@bandit.labs.overthewire.org's password: bandit0
-
-Welcome to the OverTheWire games machine !
-
-Please read /README.txt for more information on how to play the levels
-on this gameserver.
+# level15 -> level16
 
 
-The programs included with the Ubuntu system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
+[http://http://overthewire.org/wargames/bandit/bandit16.html](http://http://overthewire.org/wargames/bandit/bandit16.html)
 
-Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
-applicable law.
+-
 
+    ssh bandit15@bandit.labs.overthewire.org
 
-The programs included with the Ubuntu system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
+-
 
-Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
-applicable law.
+    bandit15@bandit.labs.overthewire.org's password: BfMYroe26WYalil77FoDi9qh59eK5xNr
 
-bandit0@melinda:~$ ls
+-
+    
+    bandit15@melinda:~$ openssl s_client -connect localhost:30001
 
+-
 
----
+    CONNECTED(00000003)
+    depth=0 CN = li190-250.members.linode.com
+    verify error:num=18:self signed certificate
+    verify return:1
+    depth=0 CN = li190-250.members.linode.com
+    verify return:1
+    ---
+    Certificate chain
+     0 s:/CN=li190-250.members.linode.com
+       i:/CN=li190-250.members.linode.com
+    ---
+    Server certificate
+    -----BEGIN CERTIFICATE-----
+    MIIC3jCCAcagAwIBAgIJAI5QiWZw4YHbMA0GCSqGSIb3DQEBCwUAMCcxJTAjBgNV
+    BAMTHGxpMTkwLTI1MC5tZW1iZXJzLmxpbm9kZS5jb20wHhcNMTQxMTE0MTAyODA0
+    WhcNMjQxMTExMTAyODA0WjAnMSUwIwYDVQQDExxsaTE5MC0yNTAubWVtYmVycy5s
+    aW5vZGUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsKmy9o5z
+    WU+1EH7Z3bB5TGQA+16zXDcEJy6tZWZ8CDrRyQXiahendp45BWUc/ZuLDo0+B3Wt
+    ZXjofmLw/F4fmR+8X1s1fQZX2dFt920qEm7LxqzWd0c7FdHiBwwRrwhkk+3cQpOB
+    TTGdLWEgpdmwwNZDTUdsDLzjDczPnju6T6p6ArTECztPbmTjfY4QIRtC6capL1Z+
+    yPJSQVAuAMEX1wTDWTGdm0VV7oW4F5cGZutf6QAP51jdhSyZuGilIPHbnj0l6Qc7
+    a7+OtEsEGi31aJ8KpRf7LNZ7DXCuoB3Hf75Pd6VjDgoOIagcH0NYqa75gEjBkGzs
+    ktLWykT7ag7fKwIDAQABow0wCzAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IB
+    AQCaZdUNAj8WDEKWdoU3LNXUBJlTJwiWBrh550PbHSQORcCz2K0kiMei1A4ojK2N
+    dMHFGAqAeUEaxtz92p2BoFpZasAtdSa3u63tBckFhfUolIS1TC7Cj51y19ysTeep
+    fGPFpuPCVqVPsruei8Z/iqn3bFIhQQdmumeePZQdPMwZSWHNVYC5XODd7PvNDrDu
+    5MZJjkz4+6LbwwAvyew62meFN2QEsYbK2Brtbhze+IjE27FGWlSw4K3jlwa409MD
+    MTf4JU41ELaYY8G/LSNDJsBVhhkHzvXR9iCbXxNz3IL0dQDNj7h4LKhBy0q7hvqg
+    kDzwlmBO4WKSmCAuky44cXmd
+    -----END CERTIFICATE-----
+    subject=/CN=li190-250.members.linode.com
+    issuer=/CN=li190-250.members.linode.com
+    ---
+    No client certificate CA names sent
+    ---
+    SSL handshake has read 1330 bytes and written 455 bytes
+    ---
+    New, TLSv1/SSLv3, Cipher is DHE-RSA-AES256-SHA
+    Server public key is 2048 bit
+    Secure Renegotiation IS supported
+    Compression: NONE
+    Expansion: NONE
+    SSL-Session:
+    Protocol  : SSLv3
+    Cipher: DHE-RSA-AES256-SHA
+    Session-ID: F6A422D9FFF25A96295A1D20E2437D5194F7AB24C20939AA704FFE2BAEEA4F97
+    Session-ID-ctx:
+    Master-Key: FD946F8E085DF9B891416828478F6DE52E40608D300BA4F8DFC82C31EC03F5A4009ACCB5796410579733D19BF069451A
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1432646914
+    Timeout   : 300 (sec)
+    Verify return code: 18 (self signed certificate)
+    ---
 
-http://overthewire.org/wargames/bandit/bandit0.html
+-
 
-### bandit0@melinda:~$ ls
-readme
+    BfMYroe26WYalil77FoDi9qh59eK5xNr
 
-### bandit0@melinda:~$ cat readme
-boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+-
 
-# 
+    HEARTBEATING
+    read R BLOCK
+    read:errno=0
 
+-
 
-# level1
-### ssh bandit1@bandit.labs.overthewire.org
+    bandit15@melinda:~$ openssl s_client -quiet -connect localhost:30001
 
-### bandit1@bandit.labs.overthewire.org's password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+-
 
-### bandit1@melinda:~$ cat < -
-CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+    depth=0 CN = li190-250.members.linode.com
+    verify error:num=18:self signed certificate
+    verify return:1
+    depth=0 CN = li190-250.members.linode.com
+    verify return:1
 
+-
 
-# level2
+    BfMYroe26WYalil77FoDi9qh59eK5xNr
 
-### ssh bandit2@bandit.labs.overthewire.org
+-
 
-### bandit2@bandit.labs.overthewire.org's password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+    Correct!
+    cluFn7wTiGryunymYOu4RcffSxQluehd
+    
+    read:errno=0
 
-### bandit2@melinda:~$ ls
-spaces in this filename
+-
+![](http://i.imgur.com/WpE9xbM.png)
 
-### bandit2@melinda:~$ cat spaces\ in\ this\ filename 
-UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
-
-# Level3
-
-### ssh bandit3@bandit.labs.overthewire.org
-
-### bandit3@bandit.labs.overthewire.org's password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
-
-### bandit3@melinda:~$ ls
-inhere
-
-### bandit3@melinda:~$ cd inhere/
-bandit3@melinda:~/inhere$ 
-
-### bandit3@melinda:~/inhere$ ls -a
-.  ..  .hidden
-
-### bandit3@melinda:~/inhere$ cat .hidden 
-pIwrPrtPN36QITSp3EQaw936yaFoFgAB
-
-# Level4
-
-### ssh bandit4@bandit.labs.overthewire.org
-
-### bandit4@bandit.labs.overthewire.org's password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
-
-### bandit4@melinda:~$ ls
-inhere
-
-### bandit4@melinda:~$ cd inhere/
-bandit4@melinda:~/inhere$
-
-### bandit4@melinda:~/inhere$ ls -a
--file00  -file02  -file04  -file06  -file08  .
--file01  -file03  -file05  -file07  -file09  ..
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](http://i.imgur.com/ei3YAZA.png)
