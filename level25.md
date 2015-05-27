@@ -1,69 +1,53 @@
-# level20 -> level21
+# level24 -> level25
 
 
-[http://http://overthewire.org/wargames/bandit/bandit21.html](http://http://overthewire.org/wargames/bandit/bandit21.html)
+[http://http://overthewire.org/wargames/bandit/bandit25.html](http://http://overthewire.org/wargames/bandit/bandit25.html)
+
+-
+
+    ssh bandit24@bandit.labs.overthewire.org
+
+-
+
+    bandit24@bandit.labs.overthewire.org's password: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 
 
 -
 
-Need to have 2 terminal windows open
-
-In 1 terminal window
+    bandit24@melinda:~$ cd /tmp/
 
 -
 
-    ssh bandit20@bandit.labs.overthewire.org
+    bandit24@melinda:/tmp$ mkdir sliitwar24
 
 -
 
-    bandit20@bandit.labs.overthewire.org's password: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+    bandit24@melinda:/tmp$ cd sliitwar24
 
 -
 
-    bandit20@melinda:~$ nc -l 4242
+    bandit24@melinda:/tmp/sliitwar24$ nano bruteforce.sh
 
 -
 
+    #!/bin/bash
+    PASS24="UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ"
+    for i in `seq 0 10000`;
+    do
+    echo "Handling $i"
+    printf "$PASS24 %04d\n" $i |  nc localhost 30002
+    
+    done
 
-In other terminal window
-
--
-
-     ssh bandit20@bandit.labs.overthewire.org
-
--
-
-      bandit20@bandit.labs.overthewire.org's password: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
-
--
-
-
-    bandit20@melinda:~$ ./suconnect 4242
+`Ctrl+X` to exit press `Y` to save
 
 -
 
-Now on the first terminal window
-
--
-
-Input This level password 
-
-    GbKksEFF4yrVs6il55v6gwY5aVje5f0j
-
+    bandit24@melinda:/tmp/sliitwar24$ chmod 777 bruteforce.sh
 
 -
 
 
-    gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+   
 
-Next level password is printed
-
--
-
-Console 1
-
-![](http://i.imgur.com/JF2PTz7.png) 
-
-Console 2
-
-![](http://i.imgur.com/H0hMvwe.png)
+    
